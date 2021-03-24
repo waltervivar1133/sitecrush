@@ -1,0 +1,20 @@
+@import './base/reset';
+@import '../assets/fonts/styles';
+@import './base/variables';
+@import './base/globals';
+@import './components/loader';
+
+//pages
+@import './pages/creation/home';
+@import './pages/creation/reto';
+@import './pages/creation/variables';
+@import './pages/creation/proposito';
+@import './pages/creation/tiempo';
+@import './pages/creation/compartir';
+@import './pages/game/nombreInicial';
+@import './pages/game/salaEspera';
+@import './pages/game/ideacion';
+@import './pages/game/ideacionScrumper';
+@import './pages/game/score';
+
+
