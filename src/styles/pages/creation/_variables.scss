@@ -11,7 +11,7 @@
   }
 
   &__logo{
-    width: 72%;
+    width: 26rem;
   }
   &__inputtext{
     font-family: 'Futura Std Medium';
@@ -64,15 +64,14 @@
   }
 
   &__card{
-    background-color: $white;
     padding: 0.5em;
     border-radius: 0.5em;
     display: flex;
     justify-content: center;
 
+
     input {
       border: none;
-
     }
   }
   &__content_input{
@@ -134,3 +133,10 @@
   }
 }
 
+
+.bg-1{
+  background-color: $variables-1;
+}
+.bg-2{
+  background-color: $variables-2;
+} 

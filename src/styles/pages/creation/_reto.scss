@@ -11,7 +11,7 @@
   }
 
   &__logo{
-    width: 72%;
+    width: 26rem;
   }
 
   &__input {
@@ -26,6 +26,14 @@
     border-radius: 10px;
     color: #888;
     margin: 1rem 0;
+
+    ::placeholder{
+    color: $gris;
+    font-family: 'Futura Std Heavy';
+    letter-spacing: 0.5px;
+    font-size: 16px;
+
+    }
     
   }
 

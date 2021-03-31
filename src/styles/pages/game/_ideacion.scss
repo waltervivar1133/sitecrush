@@ -16,21 +16,27 @@
     justify-content: center;
     align-items: center;
     img{
-      width: 20px;
+      width: 25px;
       padding-right: 0.5em;
+      font-weight: 800;
     }
 
     p {
-      color: $fucsia-light-2;
+      color: $magenta-ligh-crush;
       font-weight: 600;
       font-size: x-large;
+      font-family: 'Futura Std Bold';
+
+
     }
   }
+
+
 }
 
 .ideacion{
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,9 +45,13 @@
       text-align: center;
     
   }
+  &__error{
+    color: $fucsia-crush;
+    text-decoration: none;
+  }
 
   &__logo{
-    width: 72%;
+    width: 26rem;
   }
   &__inputtext{
     font-family: 'Futura Std Medium';
@@ -58,14 +68,16 @@
 
   &__textnew{
     color: $azul-crush;
-    background-color: $fucsia-light-2;
+    background-color: $magente-light-2;
     border-radius: 1em;
-    font-size: 20px;
-    font-family: 'Futura Std Bold';
     line-height: normal;
-    max-width:300px;
-    padding: 2em 4em;
+    max-width:500px;
+    padding: 0.2em 6em;
     margin: 0 auto;
+    p{
+      font-size: 20px;
+      font-family: 'Futura Std Bold';
+    }
   }
   &__input {
     display: flex;
@@ -127,6 +139,14 @@
     border-radius: 10px;
     color: #888;
     margin: 1rem 0;
+
+    ::placeholder{
+      color: $gris;
+      font-family: 'Futura Std Heavy';
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      padding: 0.8em 0 0 0em;
+      }
     
   }
   &__label{
@@ -146,12 +166,22 @@
     resize: none;
     
   }
-
+  &__title_head{
+    color : $gris;
+    font-family: 'Futura Std Bold';
+  }
 
   &__title {
 
     color : $azul-crush;
-    font-weight: 800;
+    font-family: 'Futura Std ';
+
+
+    b{
+      font-weight: bold;
+      font-family: 'Futura Std Bold';
+
+    }
     
   }
 
@@ -170,8 +200,34 @@
     margin: 0.5em;
   
   }
+  &__content_button{
+    display: block;
+    width: 100%;
+    padding: 0 6em 0 0;
+    float: right;
+    margin: 3em  0 1em 0;
+  }
 
-  &__button:hover{
+  &__change{
+    background-color: $variables-1;
+    padding: 0.5em;
+    color: #794608;
+    border-radius: 0.5em;
+    font-size: 19px;
+    font-weight: bold;
+    width: 255px;
+    height: 45px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -0.35rem 0px 0px inset;
+    box-sizing: border-box;
+    margin: 0.5em;
+    float: right;
+
+
+   
+  }
+
+  &__button:hover, &__change:hover{
     box-shadow: rgba(0, 0, 0, 0.15) 0px -0.15rem 0px 0px inset;
     transform: translateY(1px);
   }

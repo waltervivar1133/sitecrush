@@ -18,6 +18,7 @@ import { NombreInicial } from "../pages/Game/NombreInicial";
 import { SalaEspera } from "../pages/Game/SalaEspera";
 import { Ideacion } from "../pages/Game/Ideacion";
 import { IdeacionScrumper } from "../pages/Game/IdeacionScrumper";
+import { Score } from "../pages/Game/Score";
 
 
 export const AppRouter = () => {
@@ -74,6 +75,11 @@ export const AppRouter = () => {
               <Route
               path="/ideacionscrumper"
               component= { IdeacionScrumper  }
+              exact
+            />
+              <Route
+              path="/score"
+              component= { Score  }
               exact
             />
             

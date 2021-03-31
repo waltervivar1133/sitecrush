@@ -1,0 +1,198 @@
+.ideacion__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  h2{
+    padding-right: 5em;
+    margin-top: 2em;
+    font-weight: 800;
+  }
+  .time{
+    display: flex;
+    margin-right: 2em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 25px;
+      padding-right: 0.5em;
+      font-weight: 800;
+    }
+
+    p {
+      color: $magenta-ligh-crush;
+      font-weight: 600;
+      font-size: x-large;
+      font-family: 'Futura Std Bold';
+
+
+    }
+  }
+
+
+}
+
+.score{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  h1{
+    font-family: 'Futura Std ';
+    font-weight: 800;
+    color: $magenta-ligh-crush;
+  }
+
+  h2{
+    color: $gris;
+    font-family: 'Futura Std';
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__ideas {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3em;
+    p {
+      color: $blacked;
+      font-family: 'Futura Std';
+      font-weight: 700;
+      font-size: 48px;
+      margin-bottom:0 ;
+      margin-top: 0;
+      text-align: center;
+    }
+
+    img{
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &__container{
+      text-align: center;
+    
+  }
+  &__nombres{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+
+  }
+  &__content_puestos {
+
+    p{
+      font-family: 'Futura Std Bold';
+      color: $azul-crush;
+      font-size: 24px;
+      padding-bottom:0;
+    }
+    img {
+      padding: 0;
+      margin: 0;
+    }
+
+    .second, .tercer{
+      padding-top: 2em;
+    }
+  }
+  
+  &__logo{
+    width: 26rem;
+  }
+  
+
+  &__input {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 16px;
+    flex: 1;
+    margin: 15px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: #888;
+    
+  }
+
+  
+
+  &__text{
+    margin: 0.2em 0 4em 0 ;
+    padding: 0;
+  }
+
+  
+
+  &__button {
+    background-color: $azul-crush;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: $white;
+    font-size: 19px;
+    font-weight: bold;
+    width: 255px;
+    height: 45px;
+    border: none;
+    box-shadow: $azul-crush-2 0px -0.35rem 0px 0px inset;
+    box-sizing: border-box;
+    margin: 0.5em;
+  
+  }
+  &__buttons_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em 0;
+  }
+
+  &__return{
+    background-color: transparent;
+    border: none;
+    color : $fucsia-crush;
+    font-family: 'Futura Std Bold';
+
+    img {
+      width: 0.5rem;
+    }
+  }
+  &__content_button{
+    display: block;
+    width: 100%;
+    padding: 0 6em 0 0;
+    float: right;
+    margin: 3em  0 1em 0;
+  }
+
+
+  &__button:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -0.15rem 0px 0px inset;
+    transform: translateY(1px);
+  }
+
+  @media (max-width : 580px ){
+    &__input {
+     
+     width: 100%;
+     padding: 0;
+     margin: 0 auto;
+     height: auto;
+    }
+
+    &__label{
+      align-self: auto
+    }
+
+    
+  }
+}
+

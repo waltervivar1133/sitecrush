@@ -1,0 +1,54 @@
+.progress {
+  background: $magente-light-2;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    padding-right: 0.5em;
+
+    color: $azul-crush;
+    font-family: 'Futura Std Bold';
+  }
+
+  &__bar{
+
+    height: 18px;
+    background-color: $white;
+    border-radius: 10px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+
+  &__content{
+    background-color: $white;
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  &__striped &__bar{
+    background-color: $azul-crush;
+    width: 50%;
+    background-image: linear-gradient(45deg, $progress-bar 25%, transparent 25%, transparent 50%, $progress-bar 50%, $progress-bar 75%, transparent 75%, transparent);
+    animation: progress-bar-stripes 1s linear infinite;
+    background-size: 1rem 1rem;
+
+  }
+}
+
+@keyframes progress-bar-stripes {
+  from {
+    background-position: 1rem 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+.container{
+  margin: 0 auto;
+  width: 500px;
+  height: 225px;
+  text-align: center;
+}

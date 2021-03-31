@@ -6,8 +6,8 @@ export const NombreInicial = () => {
   return (
     <section className="nombreinicial">
         <div className="nombreinicial__container">
-        <img src={Logo} alt=""/>        
-          <h3 className="nombreinicial__subtitle">Soluciones innovadoras y veloces</h3>
+        <img src={Logo} alt="logo" className="nombreinicial__logo m-0"/>        
+          <h3 className="nombreinicial__subtitle m-0">Soluciones innovadoras y veloces</h3>
           <h2 className="nombreinicial__title">¿Cuál es tu nombre?</h2>
           <h3 className="nombreinicial__reto">Con este nombre o nickname aparecerás durante toda la sesión</h3>
           <div className="nombreinicial__input">

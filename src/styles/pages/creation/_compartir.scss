@@ -11,7 +11,7 @@
   }
 
   &__logo{
-    width: 72%;
+    width: 26rem;
   }
 
 
@@ -81,15 +81,24 @@
       padding: 0.5em 0;
       
     }
+
+    span {
+      font-family: 'Futura Std Bold';
+      font-size: 16px;
+      color: $time-number;
+      padding-right: 25px;
+      
+    }
   }
 
   &__content{
     display: flex;
     background-color: white;
     justify-content: space-between;
-    padding: 0.3em 3em;
+    padding: .9em 3em;
     margin: 0 auto;
-    width: 70%;
+    width: 100%;
+    border-radius: 10px;
 
   }
 

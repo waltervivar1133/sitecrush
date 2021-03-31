@@ -1,0 +1,279 @@
+.ideacion__header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+
+  h2{
+    padding-right: 5em;
+    margin-top: 2em;
+    font-weight: 800;
+  }
+  .time{
+    display: flex;
+    margin-right: 2em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img{
+      width: 25px;
+      padding-right: 0.5em;
+      font-weight: 800;
+    }
+
+    p {
+      color: $magenta-ligh-crush;
+      font-weight: 600;
+      font-size: x-large;
+      font-family: 'Futura Std Bold';
+
+
+    }
+  }
+
+
+}
+
+.ideacionscrumper{
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &__wrapper{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+    div {
+      max-width: 400px;
+
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+  &__container{
+      text-align: center;
+    
+  }
+  &__error{
+    color: $fucsia-crush;
+    text-decoration: none;
+  }
+
+  &__logo{
+    width: 26rem;
+  }
+  &__inputtext{
+    font-family: 'Futura Std Medium';
+    display: flex;
+    max-width: 500px;
+    min-width: 300px;
+    width: 100%;
+    color: #000;
+    border: none;
+    outline: none;
+ 
+    
+  }
+
+  &__textnew{
+    color: $azul-crush;
+    background-color: $magente-light-2;
+    border-radius: 1em;
+    line-height: normal;
+    max-width:500px;
+    padding: 0.2em 6em;
+    margin: 0 auto;
+    p{
+      font-size: 20px;
+      font-family: 'Futura Std Bold';
+    }
+  }
+  &__input {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 16px;
+    flex: 1;
+    margin: 15px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: #888;
+    
+  }
+
+  &__subtitle {
+    color : $magenta;
+    font-size: 24px;
+    padding-bottom: 1em ;
+    font-family: 'Futura Std Light';
+    text-align: left;
+    width: 100%;
+      b{
+        
+        font-weight: bold;
+        font-family: 'Futura Std Bold';
+      }
+  }
+
+  &__grid_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.2em;
+    margin: 2.5em 0;
+  }
+  &__reto{
+    color: $azul-crush;
+    font-family: 'Futura Std Light';
+  }
+  &__card{
+    background-color: $white;
+    border-radius: 1em;
+    padding: 1em 5em;
+    &_flex{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      
+      h3{
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+
+  &__input {
+    display: flex;
+    flex-direction:  column;
+    padding: 5px 25px;
+    max-width: 700px;
+    min-width: 200px; 
+    height: 100px;
+    background: $white;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: #888;
+    margin: 1rem 0;
+
+    ::placeholder{
+      color: $gris;
+      font-family: 'Futura Std Heavy';
+      letter-spacing: 0.5px;
+      font-size: 16px;
+      padding: 0.8em 0 0 0em;
+      }
+
+      p{
+        color: $magenta-crush;
+        font-family: 'Futura Std Bold';
+        float: right;
+        font-size: 16px;
+        
+      }
+    
+  }
+  &__label{
+    font-size: 17px;
+    line-height: 17px;
+    font-family: 'Futura Std Bold';
+    margin-bottom: 10px;
+    color: $magenta-ligh-crush;
+    align-self: baseline;
+  }
+  &__textarea{
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'Futura Std Bold';
+    margin-bottom: 10px;
+    border: none;
+    resize: none;
+    
+  }
+  &__title_head{
+    color : $gris;
+    font-family: 'Futura Std Bold';
+  }
+
+  &__title {
+
+    color : $azul-crush;
+    font-family: 'Futura Std ';
+
+
+    b{
+      font-weight: bold;
+      font-family: 'Futura Std Bold';
+
+    }
+    
+  }
+
+  &__button {
+    background-color: $fucsia-crush;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: $white;
+    font-size: 19px;
+    font-weight: bold;
+    width: 255px;
+    height: 45px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -0.35rem 0px 0px inset;
+    box-sizing: border-box;
+    margin: 0.5em;
+  
+  }
+  &__content_button{
+    display: block;
+    width: 100%;
+    padding: 0 6em 0 0;
+    float: right;
+    margin: 3em  0 1em 0;
+  }
+
+  &__change{
+    background-color: $variables-1;
+    padding: 0.5em;
+    color: #794608;
+    border-radius: 0.5em;
+    font-size: 19px;
+    font-weight: bold;
+    width: 255px;
+    height: 45px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -0.35rem 0px 0px inset;
+    box-sizing: border-box;
+    margin: 0.5em;
+    float: right;
+
+
+   
+  }
+
+  &__button:hover, &__change:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px -0.15rem 0px 0px inset;
+    transform: translateY(1px);
+  }
+
+  @media (max-width : 580px ){
+    &__input {
+     
+     width: 100%;
+     padding: 0;
+     margin: 0 auto;
+     height: auto;
+    }
+
+    &__label{
+      align-self: auto
+    }
+
+    
+  }
+}
+
